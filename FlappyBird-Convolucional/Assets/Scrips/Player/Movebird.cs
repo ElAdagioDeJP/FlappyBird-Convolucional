@@ -7,6 +7,11 @@ public class Movebird : MonoBehaviour
     public float speed = 2f;
     public Rigidbody2D rb2d;
     public float rotationSpeed = 25;
+    public AudioSource clipDeath;
+    public AudioSource clipMontain;
+    public AudioSource clipDesert;
+    public AudioSource clipSnow;
+    public AudioSource clipDark;
     void Start()
     {
         
@@ -22,6 +27,11 @@ public class Movebird : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        clipDark.Stop();
+        clipDesert.Stop();
+        clipMontain.Stop();
+        clipSnow.Stop();
+        clipDeath.Play();
         FindAnyObjectByType<GameManager>().GameOver();
     }
 }

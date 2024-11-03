@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject gameOverCanvas;
+
     void Start()
     {
         Time.timeScale = 1;
