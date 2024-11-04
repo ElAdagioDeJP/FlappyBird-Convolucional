@@ -692,8 +692,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209671573}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.989291, y: -0.6718128, z: -0.104964435}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.9892902, y: -0.6718128, z: -0.104964435}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -861,6 +861,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreText: {fileID: 1564924781}
   bestScore: {fileID: 1247038781}
+  Montain: {fileID: 542895019}
+  MontainSpawn: {fileID: 1032688564}
+  Desert: {fileID: 2077569998}
+  DesertSpawn: {fileID: 1324337515}
+  Snow: {fileID: 1276035251}
+  SnowSpawn: {fileID: 492148330}
+  Dark: {fileID: 209671573}
+  DarkSpawn: {fileID: 619257097}
 --- !u!1 &263359050
 GameObject:
   m_ObjectHideFlags: 0
