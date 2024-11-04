@@ -684,7 +684,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &209671574
 Transform:
   m_ObjectHideFlags: 0
@@ -703,7 +703,7 @@ Transform:
   - {fileID: 1549738390}
   - {fileID: 156492275}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &209671575
 AudioSource:
@@ -1040,7 +1040,7 @@ GameObject:
   - component: {fileID: 492148332}
   - component: {fileID: 492148331}
   m_Layer: 0
-  m_Name: PipeSpawn
+  m_Name: SnowSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1069,7 +1069,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492148330}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.25, y: 8.4, z: -0.0983104}
+  m_LocalPosition: {x: 24.76, y: 8.4, z: -0.0983104}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1246,7 +1246,7 @@ Transform:
   - {fileID: 1824944077}
   - {fileID: 10551970}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &542895022
 AudioSource:
@@ -1869,12 +1869,12 @@ GameObject:
   - component: {fileID: 619257099}
   - component: {fileID: 619257098}
   m_Layer: 0
-  m_Name: TowerSpawn
+  m_Name: DarkSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &619257098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1898,7 +1898,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 619257097}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.25, y: 0.8, z: -0.0983104}
+  m_LocalPosition: {x: 24.76, y: 8.4, z: -0.0983104}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2306,7 +2306,7 @@ GameObject:
   - component: {fileID: 1032688566}
   - component: {fileID: 1032688565}
   m_Layer: 0
-  m_Name: TreeSpawn
+  m_Name: MontainSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2324,7 +2324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e678e3c276b6e848b7929419ed42d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipePrefab: {fileID: 3762016846523881537, guid: 862f64103b2365e459eb1544b4a50a60, type: 3}
+  pipePrefab: {fileID: 879012181501703550, guid: 880630e85ffd9a74796d40503706fc4c, type: 3}
   range: 4
   maxTime: 1.2
 --- !u!4 &1032688566
@@ -2335,7 +2335,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032688564}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.25, y: 8.4, z: -0.0983104}
+  m_LocalPosition: {x: 24.76, y: 8.4, z: -0.0983104}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2512,7 +2512,7 @@ Transform:
   - {fileID: 1580574209}
   - {fileID: 575493289}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1276035253
 AudioSource:
@@ -2621,12 +2621,12 @@ GameObject:
   - component: {fileID: 1324337517}
   - component: {fileID: 1324337516}
   m_Layer: 0
-  m_Name: CactusSpawn
+  m_Name: DesertSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1324337516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2639,7 +2639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e678e3c276b6e848b7929419ed42d6d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipePrefab: {fileID: 3762016846523881537, guid: 862f64103b2365e459eb1544b4a50a60, type: 3}
+  pipePrefab: {fileID: 879012181501703550, guid: 5d5dfedd76e06f44fa0448001f22d397, type: 3}
   range: 4
   maxTime: 1.2
 --- !u!4 &1324337517
@@ -2650,7 +2650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324337515}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 25.25, y: 8.4, z: -0.0983104}
+  m_LocalPosition: {x: 18.94, y: 2.51, z: -0.0983104}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3316,13 +3316,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1590222749}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.85, y: 1.95, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1590222755
 MonoBehaviour:
@@ -4194,7 +4194,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2077569999
 Transform:
   m_ObjectHideFlags: 0
@@ -4213,7 +4213,7 @@ Transform:
   - {fileID: 836071698}
   - {fileID: 1685034408}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &2077570000
 AudioSource:

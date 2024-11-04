@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9064515738648836715}
   - component: {fileID: 5471648544414138640}
   m_Layer: 0
-  m_Name: Towers
+  m_Name: PipesGreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +63,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.4337893, y: -0.18347478}
+  m_Offset: {x: 0.5285953, y: 1.722081}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -74,7 +74,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.50457954, y: 6.4083924}
+  m_Size: {x: 0.50457835, y: 6.0114007}
   m_EdgeRadius: 0
 --- !u!114 &9064515738648836715
 MonoBehaviour:
@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 1292569279951681002}
   - component: {fileID: 9038866580759219733}
   m_Layer: 0
-  m_Name: TowerDown
+  m_Name: PipeDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -211,8 +211,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045078208970315706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.49, y: -8.12, z: 0.08444555}
-  m_LocalScale: {x: 1, y: 2.4, z: 1}
+  m_LocalPosition: {x: 0.6, y: -8.72, z: 0.08444555}
+  m_LocalScale: {x: 0.7, y: 1.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7806169666861171242}
@@ -259,10 +259,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a8d040fcfbdb6a4bbf9cb7b6e3f91a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9568a8e0da9c5784db0beba10ee525d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 0
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 10.47, y: 1.29}
   m_AdaptiveModeThreshold: 0.5
@@ -283,18 +283,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.026529074, y: -1.6133226}
+  m_Offset: {x: -0.026528776, y: -0.31519508}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.0416667, y: 10.208333}
+    oldSize: {x: 3.15625, y: 10.21875}
     newSize: {x: 10.47, y: 1.29}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.748522, y: 7.867873}
+  m_Size: {x: 2.1895256, y: 10.4641285}
   m_EdgeRadius: 0
 --- !u!1 &5869779943225280293
 GameObject:
@@ -308,7 +308,7 @@ GameObject:
   - component: {fileID: 4763683962750335194}
   - component: {fileID: 5560048204381443924}
   m_Layer: 0
-  m_Name: TowerUp
+  m_Name: PipeUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -322,8 +322,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5869779943225280293}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -4.49, y: 7.67, z: 0.08444555}
-  m_LocalScale: {x: 1, y: 2.4, z: 1}
+  m_LocalPosition: {x: 0.6000004, y: 11.94, z: 0.08444555}
+  m_LocalScale: {x: 0.7, y: 1.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7806169666861171242}
@@ -370,10 +370,10 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4a8d040fcfbdb6a4bbf9cb7b6e3f91a6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9568a8e0da9c5784db0beba10ee525d4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
+  m_FlipX: 1
+  m_FlipY: 1
   m_DrawMode: 0
   m_Size: {x: 10.47, y: 1.29}
   m_AdaptiveModeThreshold: 0.5
@@ -394,16 +394,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.036764383, y: -1.6178753}
+  m_Offset: {x: 0.027967095, y: -0.34476757}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.0416667, y: 10.208333}
+    oldSize: {x: 3.15625, y: 10.21875}
     newSize: {x: 10.47, y: 1.29}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.7046583, y: 7.934831}
+  m_Size: {x: 2.2656612, y: 10.481047}
   m_EdgeRadius: 0

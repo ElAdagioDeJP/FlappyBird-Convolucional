@@ -34,6 +34,6 @@ public class PipeSpawner : MonoBehaviour
 
         newPipe = Instantiate(pipePrefab, spawnPosition, Quaternion.identity);
 
-        Destroy(newPipe, 6.6f);
+        Destroy(newPipe, 10f);
     }
 }
