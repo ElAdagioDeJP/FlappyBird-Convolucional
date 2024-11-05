@@ -5,10 +5,12 @@ using UnityEngine;
 public class Movebird : MonoBehaviour
 {
     public float speed = 2f;
+    public GameObject FatherRed;
     public Rigidbody2D rb2d;
     private CapsuleCollider2D boxCollider2D;
     public float rotationSpeed = 25;
     public AudioSource clipDeath;
+    public bool death = false;
 
     // Variable para controlar si el jugador puede moverse
     private bool canMove = true;
@@ -20,7 +22,10 @@ public class Movebird : MonoBehaviour
 
     void Update()
     {
-        // Solo permite el movimiento si canMove es verdadero
+        if (death == true)
+        {
+            Destroy(gameObject);
+        }
         if (canMove && Input.GetKey(KeyCode.Z))
         {
             rb2d.velocity = Vector2.up * speed;
@@ -42,6 +47,6 @@ public class Movebird : MonoBehaviour
         clipDeath.Play();
         boxCollider2D.enabled = false;
         yield return new WaitForSeconds(2f);
-        Destroy(gameObject);
+        death = true;
     }
 }

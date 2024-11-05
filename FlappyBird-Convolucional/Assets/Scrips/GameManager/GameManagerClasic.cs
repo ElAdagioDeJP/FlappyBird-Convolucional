@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 public class GameManagerClasic : MonoBehaviour
 {
     public GameObject gameOverCanvas;
-    
+    public GameObject Count;
+    public GameObject Flappy;
+    public GameObject SpawnMontain;
+    public AudioSource InitClip;
     void Start()
     {
         Time.timeScale = 1;
+        StartCoroutine(Ready());
     }
 
 
@@ -27,5 +31,12 @@ public class GameManagerClasic : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    
+    IEnumerator Ready()
+    {
+        yield return new WaitForSeconds(3.6f);
+        Count.SetActive(false);
+        Flappy.SetActive(true);
+        SpawnMontain.SetActive(true);
+        InitClip.enabled = true;
+    }
 }

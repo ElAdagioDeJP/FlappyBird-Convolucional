@@ -19,7 +19,7 @@ public class MovebirdClasic : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKey(KeyCode.P))
+        if (Input.GetKey(KeyCode.Z))
         {
             rb2d.velocity = Vector2.up * speed;
         }

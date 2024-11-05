@@ -9,6 +9,8 @@ public class Movebird1 : MonoBehaviour
     private CapsuleCollider2D boxCollider2D;
     public float rotationSpeed = 25;
     public AudioSource clipDeath;
+    public GameObject FatherGreen;
+    public bool death = false;
 
 
     // Variable para controlar si el jugador puede moverse
@@ -21,6 +23,10 @@ public class Movebird1 : MonoBehaviour
 
     void Update()
     {
+        if (death == true)
+        {
+            Destroy(gameObject);
+        }
         // Solo permite el movimiento si canMove es verdadero
         if (canMove && Input.GetKey(KeyCode.M))
         {
@@ -43,6 +49,6 @@ public class Movebird1 : MonoBehaviour
         clipDeath.Play();
         boxCollider2D.enabled = false;
         yield return new WaitForSeconds(2f);
-        Destroy(gameObject);
+        death = true;
     }
 }

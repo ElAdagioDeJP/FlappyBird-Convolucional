@@ -18,7 +18,7 @@ public class Score : MonoBehaviour
     private int score;
     int j = 0;
     int i = 0;
-    float ChangeBiome = 3.5f;
+    float ChangeBiome = 0;
     void Start()
     {
         scoreText.text = score.ToString();
@@ -37,7 +37,7 @@ public class Score : MonoBehaviour
     {
         j = Random.Range(1, 100);
         
-        if( j > 0 && j < 5)
+        if( j > 0 && j < 50)
         {
             i++;
             StartCoroutine(CambioBioma());

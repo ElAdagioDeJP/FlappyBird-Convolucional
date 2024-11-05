@@ -9,15 +9,16 @@ public class GameManager : MonoBehaviour
     public GameObject winRedCanvas;
     public GameObject FlappyRedFather;
     public GameObject FlappyGreenFather;
+    public GameObject SpawnMontain;
+    public GameObject Count;
     public AudioSource clipMontain;
     public AudioSource clipDesert;
     public AudioSource clipSnow;
     public AudioSource clipDark;
-    bool WinnerGrenn;
-    bool WinnerRed;
     void Start()
     {
         Time.timeScale = 1;
+        StartCoroutine(Ready());
     }
 
 
@@ -32,7 +33,7 @@ public class GameManager : MonoBehaviour
             clipSnow.Stop();
             Time.timeScale = 0;
         }
-        else if (FlappyRedFather.transform.childCount == 0)
+        if (FlappyRedFather.transform.childCount == 0)
         {
             winGreenCanvas.SetActive(true);
             clipDark.Stop();
@@ -53,12 +54,13 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-    public void WinGreen()
+    IEnumerator Ready()
     {
-        
-    }
-    public void WinRed()
-    {
-
+        yield return new WaitForSeconds(3.6f);
+        Count.SetActive(false);
+        FlappyRedFather.SetActive(true);
+        FlappyGreenFather.SetActive(true);
+        SpawnMontain.SetActive(true);
+        clipMontain.enabled = true;
     }
 }
