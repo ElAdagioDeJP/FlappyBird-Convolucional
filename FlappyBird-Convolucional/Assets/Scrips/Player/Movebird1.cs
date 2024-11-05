@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movebird : MonoBehaviour
+public class Movebird1 : MonoBehaviour
 {
     public float speed = 2f;
     public Rigidbody2D rb2d;
     private CapsuleCollider2D boxCollider2D;
     public float rotationSpeed = 25;
     public AudioSource clipDeath;
+
 
     // Variable para controlar si el jugador puede moverse
     private bool canMove = true;
@@ -21,7 +22,7 @@ public class Movebird : MonoBehaviour
     void Update()
     {
         // Solo permite el movimiento si canMove es verdadero
-        if (canMove && Input.GetKey(KeyCode.Z))
+        if (canMove && Input.GetKey(KeyCode.M))
         {
             rb2d.velocity = Vector2.up * speed;
         }
