@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour
             clipSnow.Stop();
             Time.timeScale = 0;
         }
-        if (FlappyRedFather.transform.childCount == 0)
+        else if (FlappyRedFather.transform.childCount == 0)
         {
             winGreenCanvas.SetActive(true);
             clipDark.Stop();
@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour
     }
     IEnumerator Ready()
     {
-        yield return new WaitForSeconds(3.6f);
+        yield return new WaitForSeconds(3.8f);
         Count.SetActive(false);
         FlappyRedFather.SetActive(true);
         FlappyGreenFather.SetActive(true);
