@@ -11,6 +11,10 @@ public class TimerSpawn : MonoBehaviour
     public GameObject SnakeBrownSpawnDown;
     public GameObject BirdSpawnDesert;
     public GameObject BeeSpawn;
+    public GameObject BirdSpawnSnow;
+    public GameObject BirdSpawnSnowReverse;
+    public GameObject PlaneGreen;
+    public GameObject PlaneRed;
     public float timer;
     int bioma = 0;
     float timeBiome = 30;
@@ -41,6 +45,10 @@ public class TimerSpawn : MonoBehaviour
         SnakeBrownSpawnUp.SetActive(false);
         BirdSpawnDesert.SetActive(false);
         BeeSpawn.SetActive(false);
+        BirdSpawnSnowReverse.SetActive(false);
+        BirdSpawnSnow.SetActive(false);
+        PlaneRed.SetActive(false);
+        PlaneGreen.SetActive(false);
 
         if (bioma == 1)
         {
@@ -51,7 +59,10 @@ public class TimerSpawn : MonoBehaviour
         }
         else if (bioma == 2)
         {
-
+            BirdSpawnSnowReverse.SetActive(true);
+            BirdSpawnSnow.SetActive(true);
+            //PlaneRed.SetActive(true);
+            PlaneGreen.SetActive(true);
         }
         else if (bioma == 3)
         {

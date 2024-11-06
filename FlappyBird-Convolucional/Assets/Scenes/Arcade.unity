@@ -875,7 +875,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 220698627}
-  - component: {fileID: 220698629}
+  - component: {fileID: 220698631}
   - component: {fileID: 220698628}
   - component: {fileID: 220698630}
   m_Layer: 0
@@ -917,28 +917,6 @@ MonoBehaviour:
   Snow: {fileID: 1276035251}
   Dark: {fileID: 209671573}
   timer: 0
---- !u!114 &220698629
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220698625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0435722877db10948920b1d92ee15cb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverCanvas: {fileID: 1844128401}
-  winGreenCanvas: {fileID: 1417340354}
-  winRedCanvas: {fileID: 1842663712}
-  FlappyRedFather: {fileID: 1271084952}
-  FlappyGreenFather: {fileID: 826542063}
-  Count: {fileID: 1712795065}
-  clipMontain: {fileID: 542895022}
-  clipDesert: {fileID: 2077570000}
-  clipSnow: {fileID: 1276035253}
-  clipDark: {fileID: 209671575}
 --- !u!114 &220698630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -963,6 +941,28 @@ MonoBehaviour:
   PlaneGreen: {fileID: 1784851629}
   PlaneRed: {fileID: 1341048137}
   timer: 0
+--- !u!114 &220698631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220698625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 362a590931d280147bc86e02032562cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverCanvas: {fileID: 1844128401}
+  winGreenCanvas: {fileID: 1417340354}
+  winRedCanvas: {fileID: 1842663712}
+  FlappyRedFather: {fileID: 826542063}
+  FlappyGreenFather: {fileID: 1271084952}
+  Count: {fileID: 1712795065}
+  clipMontain: {fileID: 542895022}
+  clipDesert: {fileID: 2077570000}
+  clipSnow: {fileID: 1276035253}
+  clipDark: {fileID: 209671575}
 --- !u!1 &263359050
 GameObject:
   m_ObjectHideFlags: 0
@@ -3141,8 +3141,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+      - m_Target: {fileID: 220698631}
+        m_TargetAssemblyTypeName: GameManagerArcade, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
@@ -3544,7 +3544,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 220698629}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManagerArcade1vs1, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
@@ -5174,7 +5174,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 220698629}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameManagerArcade1vs1, Assembly-CSharp
         m_MethodName: Restart
         m_Mode: 1
