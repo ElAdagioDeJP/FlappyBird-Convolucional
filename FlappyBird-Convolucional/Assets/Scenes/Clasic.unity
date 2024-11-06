@@ -2207,6 +2207,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Count
       objectReference: {fileID: 0}
+    - target: {fileID: 4281500841348628987, guid: 4aa34db42c5ce8c4f9f0fd2c9b19654f, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4281500841348628988, guid: 4aa34db42c5ce8c4f9f0fd2c9b19654f, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -3376,8 +3380,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020807987, y: -0.022034645}
-  m_Size: {x: 1.8378708, y: 1.3793063}
+  m_Offset: {x: -0.020808041, y: 0.024545437}
+  m_Size: {x: 0.9462043, y: 0.7538152}
   m_Direction: 1
 --- !u!4 &1590222754
 Transform:

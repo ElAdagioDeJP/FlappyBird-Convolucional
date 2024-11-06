@@ -36,7 +36,6 @@ public class Movebird : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
         // Desactiva el movimiento
         canMove = false;
         StartCoroutine(Death());
@@ -48,5 +47,13 @@ public class Movebird : MonoBehaviour
         boxCollider2D.enabled = false;
         yield return new WaitForSeconds(2f);
         death = true;
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            canMove = false;
+            StartCoroutine(Death());
+        }
     }
 }

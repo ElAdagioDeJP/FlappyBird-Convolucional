@@ -51,4 +51,13 @@ public class Movebird1 : MonoBehaviour
         yield return new WaitForSeconds(2f);
         death = true;
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            canMove = false;
+            StartCoroutine(Death());
+        }
+    }
+
 }

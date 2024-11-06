@@ -1615,7 +1615,7 @@ GameObject:
   - component: {fileID: 566705019}
   m_Layer: 0
   m_Name: FlappyAllRed
-  m_TagString: Player2
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1750,8 +1750,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020807987, y: -0.022034645}
-  m_Size: {x: 1.8378708, y: 1.3793063}
+  m_Offset: {x: -0.021452252, y: -0.00477886}
+  m_Size: {x: 0.9220376, y: 0.706344}
   m_Direction: 1
 --- !u!95 &566705016
 Animator:
@@ -4343,8 +4343,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.020807987, y: -0.022034645}
-  m_Size: {x: 1.8378708, y: 1.3793063}
+  m_Offset: {x: -0.02576661, y: 0.03404651}
+  m_Size: {x: 0.9306667, y: 0.6804618}
   m_Direction: 1
 --- !u!4 &1590222754
 Transform:
