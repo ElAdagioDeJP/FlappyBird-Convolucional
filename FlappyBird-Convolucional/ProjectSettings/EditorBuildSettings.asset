@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Clasic.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Clasic 1vs1.unity
+    guid: 74aeea642929233499804024a3da25e5
+  - enabled: 1
+    path: Assets/Scenes/Arcade 1vs1.unity
+    guid: a7fdc6e82eb9a5c4f91d012d504675e8
   m_configObjects: {}
