@@ -15,9 +15,13 @@ public class TimerSpawn : MonoBehaviour
     public GameObject BirdSpawnSnowReverse;
     public GameObject PlaneGreen;
     public GameObject PlaneRed;
+    public GameObject BatSpawn;
+    public GameObject GhostSpawn;
+    public GameObject BirdDarkSpawn;
     public float timer;
     int bioma = 0;
     float timeBiome = 30;
+    int i = 0;
 
     private void Start()
     {
@@ -47,10 +51,16 @@ public class TimerSpawn : MonoBehaviour
         BeeSpawn.SetActive(false);
         BirdSpawnSnowReverse.SetActive(false);
         BirdSpawnSnow.SetActive(false);
-        PlaneRed.SetActive(false);
+        if(PlaneRed != null)
+        {
+            PlaneRed.SetActive(false);
+        }
         PlaneGreen.SetActive(false);
+        BatSpawn.SetActive(false);
+        GhostSpawn.SetActive(false);
+        BirdDarkSpawn.SetActive(false);
 
-        if (bioma == 1)
+        if (bioma == 3)
         {
             SnakeBrownSpawnDown.SetActive(true);
             SnakeBrownSpawnUp.SetActive(true);
@@ -61,12 +71,17 @@ public class TimerSpawn : MonoBehaviour
         {
             BirdSpawnSnowReverse.SetActive(true);
             BirdSpawnSnow.SetActive(true);
-            //PlaneRed.SetActive(true);
+            if(PlaneRed != null)
+            {
+                PlaneRed.SetActive(true);
+            }
             PlaneGreen.SetActive(true);
         }
-        else if (bioma == 3)
+        else if (bioma == 1)
         {
-
+            StartCoroutine(BatySpawn());
+            GhostSpawn.SetActive(true);
+            BirdDarkSpawn.SetActive(true);
         }
         else if (bioma == 0)
         {
@@ -86,6 +101,17 @@ public class TimerSpawn : MonoBehaviour
         MoscaSpawn.SetActive(true);
         BirdSpawn.SetActive(true);
         SnakeSpawn.SetActive(true);
+    }
+
+    IEnumerator BatySpawn()
+    {
+        while (i < 5)
+        {
+            BatSpawn.SetActive(true);
+            yield return new WaitForSeconds(5f);
+            BatSpawn.SetActive(false);
+            i++;
+        }
     }
 }
 

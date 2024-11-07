@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoscaSpawn : MonoBehaviour
+public class Spawn : MonoBehaviour
 {
-    public GameObject MoscaPrefab;
+    public GameObject PrefabEnemy;
 
     public float range = 0.5f;
 
@@ -13,7 +13,7 @@ public class MoscaSpawn : MonoBehaviour
     private float timer;
     void Start()
     {
-        SpawnPipe();
+        SpawnEnemy();
     }
 
 
@@ -22,17 +22,17 @@ public class MoscaSpawn : MonoBehaviour
         timer += Time.deltaTime;
         if (timer > maxTime)
         {
-            SpawnPipe();
+            SpawnEnemy();
             timer = 0;
         }
     }
 
-    public void SpawnPipe()
+    public void SpawnEnemy()
     {
         Vector3 spawnPosition = transform.position + new Vector3(0, Random.Range(-range, range));
         GameObject newPipe;
 
-        newPipe = Instantiate(MoscaPrefab, spawnPosition, Quaternion.identity);
+        newPipe = Instantiate(PrefabEnemy, spawnPosition, Quaternion.identity);
 
         Destroy(newPipe, 10f);
     }
