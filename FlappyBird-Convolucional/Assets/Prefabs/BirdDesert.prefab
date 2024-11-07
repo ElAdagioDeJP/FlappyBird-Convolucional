@@ -137,4 +137,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   forwardDistance: 0
-  forwardSpeed: -30
+  forwardSpeed: -40

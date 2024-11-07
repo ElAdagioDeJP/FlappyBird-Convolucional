@@ -33,7 +33,7 @@ public class Timer : MonoBehaviour
         Snow.SetActive(false);
         Dark.SetActive(false);
 
-        if (bioma == 3)
+        if (bioma == 1)
         {
             Desert.SetActive(true);
         }
@@ -41,7 +41,7 @@ public class Timer : MonoBehaviour
         {
             Snow.SetActive(true);
         }
-        else if (bioma == 1)
+        else if (bioma == 3)
         {
             Dark.SetActive(true);
         }

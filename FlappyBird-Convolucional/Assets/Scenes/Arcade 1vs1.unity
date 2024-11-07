@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoscaPrefab: {fileID: 1479137767272992993, guid: 9ac5a75398c8c834c977abc8d64e3830, type: 3}
+  PrefabEnemy: {fileID: 1479137767272992993, guid: 9ac5a75398c8c834c977abc8d64e3830, type: 3}
   range: 10
   maxTime: 2.5
 --- !u!1 &85468259
@@ -492,7 +492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoscaPrefab: {fileID: 1479137767272992993, guid: d54177bd68ef4e5489f4d24d364b0891, type: 3}
+  PrefabEnemy: {fileID: 1479137767272992993, guid: d54177bd68ef4e5489f4d24d364b0891, type: 3}
   range: 3.5
   maxTime: 6.5
 --- !u!1 &126760215
@@ -768,6 +768,8 @@ Transform:
   - {fileID: 1549738390}
   - {fileID: 156492275}
   - {fileID: 360002390}
+  - {fileID: 1318149853}
+  - {fileID: 1385271390}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -964,6 +966,8 @@ MonoBehaviour:
   PlaneGreen: {fileID: 1784851629}
   PlaneRed: {fileID: 1341048137}
   BatSpawn: {fileID: 360002388}
+  GhostSpawn: {fileID: 1318149852}
+  BirdDarkSpawn: {fileID: 1385271389}
   timer: 0
 --- !u!1 &263359050
 GameObject:
@@ -1093,7 +1097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoscaPrefab: {fileID: 1393672675249329036, guid: ebabdbbed0be4de41960915665bbd66e, type: 3}
+  PrefabEnemy: {fileID: 1393672675249329036, guid: ebabdbbed0be4de41960915665bbd66e, type: 3}
   range: 5
   maxTime: 9
 --- !u!1001 &343273478
@@ -1194,7 +1198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoscaPrefab: {fileID: 1479137767272992993, guid: cef728c5bf5b3634bb6878af7a90db93, type: 3}
+  PrefabEnemy: {fileID: 1479137767272992993, guid: cef728c5bf5b3634bb6878af7a90db93, type: 3}
   range: 12
   maxTime: 0.4
 --- !u!4 &360002390
@@ -1253,10 +1257,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 367942476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
+  m_Script: {fileID: 11500000, guid: ca7036f50c4c06647a3c6e24504cdc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoscaPrefab: {fileID: 1479137767272992993, guid: dd41fec88e4e6ef4eb4302db4b5f0b79, type: 3}
+  PrefabEnemy1: {fileID: 1479137767272992993, guid: 7014bcc33938933478efe9ff0d6c7f5c, type: 3}
+  PrefabEnemy2: {fileID: 1479137767272992993, guid: dd41fec88e4e6ef4eb4302db4b5f0b79, type: 3}
   range: 0
   maxTime: 0.75
 --- !u!1 &464701681
@@ -1359,7 +1364,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &542895021
 Transform:
   m_ObjectHideFlags: 0
@@ -1660,7 +1665,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &566705012
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2741,7 +2746,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoscaPrefab: {fileID: 1393672675249329036, guid: 9c6b4272c761e04439d99439ffa084c2, type: 3}
+  PrefabEnemy: {fileID: 1393672675249329036, guid: 9c6b4272c761e04439d99439ffa084c2, type: 3}
   range: 4
   maxTime: 9
 --- !u!1 &826542063
@@ -3199,10 +3204,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1245912018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
+  m_Script: {fileID: 11500000, guid: ca7036f50c4c06647a3c6e24504cdc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoscaPrefab: {fileID: 1479137767272992993, guid: d7fc47154fceb384ca5a4c1ea2d34b42, type: 3}
+  PrefabEnemy1: {fileID: 1479137767272992993, guid: d7fc47154fceb384ca5a4c1ea2d34b42, type: 3}
+  PrefabEnemy2: {fileID: 1479137767272992993, guid: dc3f24e9aca2ca64c88a06fa3502c01d, type: 3}
   range: 0
   maxTime: 0.75
 --- !u!1 &1271084952
@@ -3374,6 +3380,53 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &1318149852
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1318149853}
+  - component: {fileID: 1318149854}
+  m_Layer: 0
+  m_Name: GhostSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1318149853
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318149852}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 22.26, y: -5.36, z: 0.104964435}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 209671574}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1318149854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1318149852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PrefabEnemy: {fileID: 511097583570568938, guid: 9e62632fe81870e4eb8ad6eb0ce3f4b8, type: 3}
+  range: 0
+  maxTime: 8
 --- !u!1 &1324509066
 GameObject:
   m_ObjectHideFlags: 0
@@ -3517,6 +3570,54 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8541541869745163884, guid: a7d8b3e2e446049449fb991d5135d3f1, type: 3}
   m_PrefabInstance: {fileID: 343273478}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1385271389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1385271390}
+  - component: {fileID: 1385271391}
+  m_Layer: 0
+  m_Name: DarkBirdSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1385271390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385271389}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 22.26, y: 0.61, z: 0.104964435}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 209671574}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1385271391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385271389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0074df80be0769d4382c8aaa4445d094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PrefabEnemy: {fileID: 1479137767272992993, guid: 5fc6ae59828789d46a2fb8a50b6b3ebd, type: 3}
+  player: {fileID: 1590222754}
+  range: 0
+  maxTime: 6.5
 --- !u!1 &1409926685
 GameObject:
   m_ObjectHideFlags: 0
@@ -3973,7 +4074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoscaPrefab: {fileID: 9019252320092940204, guid: c79531c2d6f928b4da27d3ee9b5f7849, type: 3}
+  PrefabEnemy: {fileID: 9019252320092940204, guid: c79531c2d6f928b4da27d3ee9b5f7849, type: 3}
   range: 8
   maxTime: 1
 --- !u!1 &1549738389
@@ -4449,9 +4550,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoscaPrefab: {fileID: 9019252320092940204, guid: 6e89f60605197534bb23c455482ee2b5, type: 3}
+  PrefabEnemy: {fileID: 9019252320092940204, guid: 6e89f60605197534bb23c455482ee2b5, type: 3}
   range: 12
-  maxTime: 1.7
+  maxTime: 0.9
 --- !u!1 &1645307817
 GameObject:
   m_ObjectHideFlags: 0
@@ -5277,7 +5378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoscaPrefab: {fileID: 1393672675249329036, guid: cb2765395e27bfc45861ec4e39930417, type: 3}
+  PrefabEnemy: {fileID: 1393672675249329036, guid: cb2765395e27bfc45861ec4e39930417, type: 3}
   range: 3
   maxTime: 9
 --- !u!4 &1923246235

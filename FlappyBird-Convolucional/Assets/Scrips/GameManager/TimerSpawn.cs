@@ -21,7 +21,7 @@ public class TimerSpawn : MonoBehaviour
     public float timer;
     int bioma = 0;
     float timeBiome = 30;
-    int i = 0;
+
 
     private void Start()
     {
@@ -51,7 +51,7 @@ public class TimerSpawn : MonoBehaviour
         BeeSpawn.SetActive(false);
         BirdSpawnSnowReverse.SetActive(false);
         BirdSpawnSnow.SetActive(false);
-        if(PlaneRed != null)
+        if (PlaneRed != null)
         {
             PlaneRed.SetActive(false);
         }
@@ -60,7 +60,7 @@ public class TimerSpawn : MonoBehaviour
         GhostSpawn.SetActive(false);
         BirdDarkSpawn.SetActive(false);
 
-        if (bioma == 3)
+        if (bioma == 1)
         {
             SnakeBrownSpawnDown.SetActive(true);
             SnakeBrownSpawnUp.SetActive(true);
@@ -71,15 +71,15 @@ public class TimerSpawn : MonoBehaviour
         {
             BirdSpawnSnowReverse.SetActive(true);
             BirdSpawnSnow.SetActive(true);
-            if(PlaneRed != null)
+            if (PlaneRed != null)
             {
                 PlaneRed.SetActive(true);
             }
             PlaneGreen.SetActive(true);
         }
-        else if (bioma == 1)
+        else if (bioma == 3)
         {
-            StartCoroutine(BatySpawn());
+            BatSpawn.SetActive(true);
             GhostSpawn.SetActive(true);
             BirdDarkSpawn.SetActive(true);
         }
@@ -101,17 +101,6 @@ public class TimerSpawn : MonoBehaviour
         MoscaSpawn.SetActive(true);
         BirdSpawn.SetActive(true);
         SnakeSpawn.SetActive(true);
-    }
-
-    IEnumerator BatySpawn()
-    {
-        while (i < 5)
-        {
-            BatSpawn.SetActive(true);
-            yield return new WaitForSeconds(5f);
-            BatSpawn.SetActive(false);
-            i++;
-        }
     }
 }
 

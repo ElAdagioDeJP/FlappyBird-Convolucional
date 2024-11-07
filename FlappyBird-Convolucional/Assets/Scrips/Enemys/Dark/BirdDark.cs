@@ -6,6 +6,7 @@ public class BirdDark : MonoBehaviour
     CapsuleCollider2D capsule;
     public float forwardDistance = 5f;
     public float forwardSpeed = 2f;
+    SpriteRenderer sprite;
 
     private Transform player; // Cambiamos el acceso a privado y lo asignaremos desde el spawner
     private Vector2 startPosition;
@@ -14,6 +15,7 @@ public class BirdDark : MonoBehaviour
     private void Awake()
     {
         capsule = GetComponent<CapsuleCollider2D>();
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     public void SetPlayer(Transform playerTransform) // Nueva función para asignar el jugador
@@ -48,6 +50,8 @@ public class BirdDark : MonoBehaviour
             initialDirection = (player.position - transform.position).normalized;
             float angle = Mathf.Atan2(initialDirection.y, initialDirection.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0, 0, angle);
+            sprite.flipX = false;
+            sprite.flipY = true;
         }
 
         // Movimiento continuo en la dirección inicial

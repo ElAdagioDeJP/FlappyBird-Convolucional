@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1479137767272992997}
   - component: {fileID: 1479137767272992996}
   - component: {fileID: 1479137767272992999}
-  - component: {fileID: 1874561269567502584}
+  - component: {fileID: 1245763056319522981}
   m_Layer: 0
-  m_Name: BirdDark
+  m_Name: BirdSnow2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,9 +76,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a1438c21459834648b47de46dbd1f174, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7edd8c5514f4b8c458ad789a70d9e83e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 2, y: 2}
@@ -97,7 +97,7 @@ Animator:
   m_GameObject: {fileID: 1479137767272992993}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1ad2af49f0ef5034096e53518bcd9e81, type: 2}
+  m_Controller: {fileID: 9100000, guid: 4b3b1acd97c8e9c4aa2cbdc4819ee9d2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -124,7 +124,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.08854865, y: -0.1612795}
   m_Size: {x: 1.4181311, y: 0.8931908}
   m_Direction: 1
---- !u!114 &1874561269567502584
+--- !u!114 &1245763056319522981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,8 +133,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1479137767272992993}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c69aaf176bb5ac44afa093da8b49b49, type: 3}
+  m_Script: {fileID: 11500000, guid: dbf1cbbc393cd144786be5788565a81f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forwardDistance: -5
-  forwardSpeed: 40
+  forwardDistance: 0
+  forwardSpeed: 5
+  zigZagAmplitude: 8
+  zigZagFrequency: 2

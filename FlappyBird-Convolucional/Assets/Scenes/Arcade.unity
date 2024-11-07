@@ -1020,8 +1020,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrefabEnemy: {fileID: 1393672675249329036, guid: 9c6b4272c761e04439d99439ffa084c2, type: 3}
-  range: 5
+  PrefabEnemy: {fileID: 1393672675249329036, guid: ebabdbbed0be4de41960915665bbd66e, type: 3}
+  range: 6
   maxTime: 9
 --- !u!1 &319227445
 GameObject:
@@ -1112,10 +1112,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 367942476}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
+  m_Script: {fileID: 11500000, guid: ca7036f50c4c06647a3c6e24504cdc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrefabEnemy: {fileID: 1479137767272992993, guid: dd41fec88e4e6ef4eb4302db4b5f0b79, type: 3}
+  PrefabEnemy1: {fileID: 1479137767272992993, guid: 7014bcc33938933478efe9ff0d6c7f5c, type: 3}
+  PrefabEnemy2: {fileID: 1479137767272992993, guid: dd41fec88e4e6ef4eb4302db4b5f0b79, type: 3}
   range: 0
   maxTime: 0.75
 --- !u!1 &464701681
@@ -1218,7 +1219,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &542895021
 Transform:
   m_ObjectHideFlags: 0
@@ -2073,7 +2074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrefabEnemy: {fileID: 1393672675249329036, guid: ebabdbbed0be4de41960915665bbd66e, type: 3}
+  PrefabEnemy: {fileID: 1393672675249329036, guid: 9c6b4272c761e04439d99439ffa084c2, type: 3}
   range: 4
   maxTime: 9
 --- !u!1 &826542063
@@ -2578,10 +2579,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1245912018}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e108cff11a747747a4d938e1bf5b6f9, type: 3}
+  m_Script: {fileID: 11500000, guid: ca7036f50c4c06647a3c6e24504cdc80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PrefabEnemy: {fileID: 1479137767272992993, guid: d7fc47154fceb384ca5a4c1ea2d34b42, type: 3}
+  PrefabEnemy1: {fileID: 1479137767272992993, guid: d7fc47154fceb384ca5a4c1ea2d34b42, type: 3}
+  PrefabEnemy2: {fileID: 1479137767272992993, guid: dc3f24e9aca2ca64c88a06fa3502c01d, type: 3}
   range: 0
   maxTime: 0.75
 --- !u!1 &1276035251
@@ -3640,7 +3642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabEnemy: {fileID: 9019252320092940204, guid: 6e89f60605197534bb23c455482ee2b5, type: 3}
   range: 12
-  maxTime: 1.7
+  maxTime: 0.9
 --- !u!1 &1645307817
 GameObject:
   m_ObjectHideFlags: 0
@@ -4067,7 +4069,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PrefabEnemy: {fileID: 511097583570568938, guid: 9e62632fe81870e4eb8ad6eb0ce3f4b8, type: 3}
   range: 0
-  maxTime: 4.5
+  maxTime: 8
 --- !u!4 &1775057955
 Transform:
   m_ObjectHideFlags: 0
@@ -4476,6 +4478,10 @@ PrefabInstance:
     - target: {fileID: 210658769516237791, guid: 5842bbfacab381a4bbb7be2467f78d84, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1915521578374464741, guid: 5842bbfacab381a4bbb7be2467f78d84, type: 3}
+      propertyPath: m_Name
+      value: BalaSpawn
       objectReference: {fileID: 0}
     - target: {fileID: 4604855206161471722, guid: 5842bbfacab381a4bbb7be2467f78d84, type: 3}
       propertyPath: m_LocalPosition.x
