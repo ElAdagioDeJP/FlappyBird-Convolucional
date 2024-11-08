@@ -1,18 +1,33 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 public class Timer : MonoBehaviour
 {
+
+    public TextMeshProUGUI time;
     public GameObject Montain;
     public GameObject Desert;
     public GameObject Snow;
     public GameObject Dark;
     public float timer;
+    private float sometimes;
     int bioma = 0;
     float timeBiome = 30;
     public static int Dificultad = 1;
     public static float DificultadSpawn = 0.1f;
+    float acountTime;
+
+    private void Start()
+    {
+        time.text = sometimes.ToString();
+    }
+    private void Update()
+    {
+        acountTime += Time.deltaTime;
+        sometimes = (int)acountTime;
+        time.text = sometimes.ToString();
+    }
     private void FixedUpdate()
     {
         timer += Time.deltaTime;
