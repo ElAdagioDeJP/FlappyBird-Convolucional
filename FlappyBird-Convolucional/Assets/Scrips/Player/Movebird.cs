@@ -26,7 +26,7 @@ public class Movebird : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (canMove && Input.GetKey(KeyCode.Z))
+        if (canMove && Input.GetKey(KeyCode.M))
         {
             rb2d.velocity = Vector2.up * speed;
         }

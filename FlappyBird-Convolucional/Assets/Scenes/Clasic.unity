@@ -4035,6 +4035,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2013940552324727016, guid: 2d48bd1cc6d2b7444aa4b38a41c67660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 220698629}
+    - target: {fileID: 2013940552324727016, guid: 2d48bd1cc6d2b7444aa4b38a41c67660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 2013940552324727016, guid: 2d48bd1cc6d2b7444aa4b38a41c67660, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManagerClasic, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 2013940552911326704, guid: 2d48bd1cc6d2b7444aa4b38a41c67660, type: 3}
       propertyPath: m_Camera
       value: 

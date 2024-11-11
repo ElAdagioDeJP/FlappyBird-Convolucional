@@ -342,7 +342,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SOBREVIVE EL MAYOR TIEMPO POSIBLE CONTRA ENEMIGOS
+  m_text: SOBREVIVE EL MAYOR TIEMPO POSIBLE CONTRA ENEMIGOS, NO DEJES QUE TE TOQUEN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7f00e2ca91245c94c8b71d3dcacf4684, type: 2}
   m_sharedMaterial: {fileID: -6164325598371941775, guid: 7f00e2ca91245c94c8b71d3dcacf4684, type: 2}
@@ -6296,7 +6296,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "SALTA ENTRE LOS OBST\xC1CULOS PARA OBTENER EL MAXIMO PUNTAJE POSIBLE"
+  m_text: "VUELA ENTRE LOS OBST\xC1CULOS PARA OBTENER EL MAXIMO PUNTAJE POSIBLE"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7f00e2ca91245c94c8b71d3dcacf4684, type: 2}
   m_sharedMaterial: {fileID: -6164325598371941775, guid: 7f00e2ca91245c94c8b71d3dcacf4684, type: 2}
@@ -7763,7 +7763,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Player1        KEY [Z] '
+  m_text: 'Player1        KEY [M] '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -9039,7 +9039,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Player2       KEY  [M]
+  m_text: Player2       KEY  [Z]
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}

@@ -20,13 +20,21 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
-        time.text = sometimes.ToString();
+        if(time != null)
+        {
+            time.text = sometimes.ToString();
+        }
+        
     }
     private void Update()
     {
-        acountTime += Time.deltaTime;
-        sometimes = (int)acountTime;
-        time.text = sometimes.ToString();
+        if(time != null)
+        {
+            acountTime += Time.deltaTime;
+            sometimes = (int)acountTime;
+            time.text = sometimes.ToString();
+        }
+        
     }
     private void FixedUpdate()
     {
