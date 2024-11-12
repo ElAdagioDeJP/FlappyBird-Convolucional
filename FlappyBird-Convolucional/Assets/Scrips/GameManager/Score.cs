@@ -5,6 +5,7 @@ using TMPro;
 
 public class Score : MonoBehaviour
 {
+    public GameObject flappy;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI bestScore;
     public GameObject Montain;
@@ -18,11 +19,16 @@ public class Score : MonoBehaviour
     private int score;
     int j = 0;
     int i = 0;
+    float probability = 5f;
     float ChangeBiome = 4f;
     void Start()
     {
         scoreText.text = score.ToString();
         bestScore.text = PlayerPrefs.GetInt("BestScore", 0).ToString();
+        if (flappy == null)
+        {
+            probability = 2.5f;
+        }
     }
     
     public void UpdateBestScore()
@@ -37,7 +43,7 @@ public class Score : MonoBehaviour
     {
         j = Random.Range(1, 100);
         
-        if( j > 0 && j < 5)
+        if( j > 0 && j < probability)
         {
             i++;
             StartCoroutine(CambioBioma());

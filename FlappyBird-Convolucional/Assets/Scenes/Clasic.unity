@@ -770,6 +770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db861b5bce2520444b1d1c491a759acb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flappy: {fileID: 1590222749}
   scoreText: {fileID: 1564924781}
   bestScore: {fileID: 1247038781}
   Montain: {fileID: 542895019}

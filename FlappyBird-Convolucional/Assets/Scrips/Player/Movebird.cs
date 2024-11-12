@@ -30,6 +30,11 @@ public class Movebird : MonoBehaviour
         {
             rb2d.velocity = Vector2.up * speed;
         }
+        else if(canMove && Input.GetMouseButtonDown(0))
+        {
+            rb2d.velocity = Vector2.up * speed * 1.5f;
+        }
+
 
         transform.rotation = Quaternion.Euler(0, 0, rb2d.velocity.y * rotationSpeed * Time.deltaTime * 100);
     }
